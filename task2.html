@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <!-- To create add button --> 
+    <button type="button" onClick="Add()">Add +1</button> 
+    <!-- To create subtract button -->
+    <button type="button" onClick="Subtract()">Subtract -1</button>
+    <!-- Result section -->
+    <p>Answer : <a id="answer">0</a></p>
+    <script>
+    var answer = 0; // inicial variable.
+
+function Add() //Addition function.
+{
+  answer += 1; //to increase answer by 1.
+  document.getElementById("answer").innerHTML = answer;
+};
+function Subtract() //Subtraction function.
+{
+  answer -= 1; //to decrease answer by 1.
+  document.getElementById("answer").innerHTML = answer;
+};
+    </script>
+</body>
+</html>
